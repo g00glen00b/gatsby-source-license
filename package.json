@@ -1,0 +1,42 @@
+{
+  "name": "gatsby-source-license",
+  "version": "0.0.1",
+  "description": "Gatsby source plugin for pulling software license information from dependencies.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext js ./ --cache",
+    "format": "prettier --write 'src/*.js'",
+    "build": "babel src --out-dir ./ --source-maps",
+    "watch": "babel src --out-dir ./ --source-maps --watch",
+    "test": "jest --color"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "author": "Dimitri Mestdagh <me@g00glen00b.be>",
+  "license": "MIT",
+  "engines": {
+    "npm": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5"
+  },
+  "peerDependencies": {
+    "gatsby": ">2.0.0"
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}
