@@ -23,4 +23,4 @@ jobs:
       - run: codecov
       - name: Verify no unstaged changes
         if: runner.os != 'windows'
-        run: __tests__/verify-no-unstaged-changes.sh
+        run: test/verify-no-unstaged-changes.sh
