@@ -13,7 +13,7 @@ export async function getLicenses(directory, options, baseDir = directory) {
   const newExcludedDependencies = [...excludedDependencies, currentLicense.label];
 
   if (excludedDependencies.includes(currentLicense.label)) {
-    return mergeLicenses(options, directory, baseDir, currentLicense);
+    return mergeLicenses(options, directory, baseDir);
   } else {
     const newOptions = {...options, excludedDependencies: newExcludedDependencies, depth: depth - 1};
     const childLicenses = includeDependencies ? await getChildLicenses(dependencies, newOptions, directory, baseDir) : [];
@@ -26,7 +26,7 @@ export async function getLicenses(directory, options, baseDir = directory) {
 function mergeLicenses(options, directory, baseDir, currentLicense, childLicenses = []) {
   const isSelf = directory === baseDir;
   const {excludeSelf = true} = options;
-  if (isSelf && excludeSelf) {
+  if ((isSelf && excludeSelf) || currentLicense == null) {
     return childLicenses;
   } else {
     return [currentLicense, ...childLicenses];

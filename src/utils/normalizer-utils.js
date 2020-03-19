@@ -23,18 +23,22 @@ function getLicense(license) {
   }
 }
 
-function getHttpsRepository(url) {
+function getHttpsRepository(url = '') {
   const [,, httpsUrl] = url.match(/^(git\+)?(https?:.+?)(\.git)?$/) || [];
   return httpsUrl;
 }
 
-function getSshRepository(url) {
+function getSshRepository(url = '') {
   const [,,,sshUrl] = url.match(/^git(\+ssh)?:\/\/(.+?@)?(.+?)(\.git)$/) || [];
-  return sshUrl;
+  if (sshUrl == null) {
+    return null;
+  } else {
+    return `https://${sshUrl}`;
+  }
 }
 
-function getGitHubUsernameRepository(url) {
-  const [,username, repository] = url.match(/^github.com:(.+?)\/(.+?)$/);
+function getGitHubUsernameRepository(url = '') {
+  const [,username, repository] = url.match(/^github.com:(.+?)\/(.+?)$/) || [];
   if (username == null || repository == null) {
     return null;
   } else {

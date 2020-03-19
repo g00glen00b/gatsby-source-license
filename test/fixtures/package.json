@@ -1,0 +1,14 @@
+{
+  "name": "fixture-1",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "fixture-2": "1.0.0"
+  },
+  "devDependencies": {
+    "fixture-3": "1.0.0"
+  },
+  "repository": {
+    "url": "https://example.org"
+  }
+}
