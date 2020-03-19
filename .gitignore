@@ -14,5 +14,6 @@ coverage/
 
 # Gatsby
 /gatsby-*
+/utils
 !src/**
 !test/**
