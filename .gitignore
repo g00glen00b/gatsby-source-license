@@ -13,6 +13,6 @@ npm-debug.log*
 coverage/
 
 # Gatsby
-gatsby-*
+/gatsby-*
 !src/**
 !test/**
