@@ -2,7 +2,8 @@
 
 [![Continuous integration](https://github.com/g00glen00b/gatsby-source-license/workflows/Continuous%20integration/badge.svg)](https://github.com/g00glen00b/gatsby-source-license/actions?query=workflow%3A%22Continuous+integration%22)
 [![Vulnerabilities](https://snyk.io/test/github/g00glen00b/gatsby-source-license/badge.svg)](https://snyk.io/test/github/g00glen00b/gatsby-source-license)
-
+[![codecov](https://codecov.io/gh/g00glen00b/gatsby-source-license/branch/master/graph/badge.svg)](https://codecov.io/gh/g00glen00b/gatsby-source-license)
+[![npm version](https://badge.fury.io/js/gatsby-source-license.svg)](https://badge.fury.io/js/gatsby-source-license)
 
 Gatsby source plugin for pulling software license information from dependencies.
 
