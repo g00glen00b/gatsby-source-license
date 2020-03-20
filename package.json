@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-license",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gatsby source plugin for pulling software license information from dependencies.",
   "main": "index.js",
   "scripts": {
@@ -38,5 +38,8 @@
   },
   "jest": {
     "collectCoverage": true
+  },
+  "repository": {
+    "url": "https://github.com/g00glen00b/gatsby-source-license"
   }
 }

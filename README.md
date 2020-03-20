@@ -1,5 +1,9 @@
 # gatsby-source-license
 
+[![Continuous integration](https://github.com/g00glen00b/gatsby-source-license/workflows/Continuous%20integration/badge.svg)](https://github.com/g00glen00b/gatsby-source-license/actions?query=workflow%3A%22Continuous+integration%22)
+[![Vulnerabilities](https://snyk.io/test/github/g00glen00b/gatsby-source-license/badge.svg)](https://snyk.io/test/github/g00glen00b/gatsby-source-license)
+
+
 Gatsby source plugin for pulling software license information from dependencies.
 
 The plugin reads the dependencies from `package.json`, and will check the `node_modules` directories for these dependencies and their licenses.

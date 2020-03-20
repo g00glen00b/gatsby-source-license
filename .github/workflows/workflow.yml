@@ -15,12 +15,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - run: npm install -g codecov
       - run: npm install
       - run: npm run lint
       - run: npm run test
       - run: npm run build
-      - run: codecov
+      - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
       - name: Verify no unstaged changes
         if: runner.os != 'windows'
         run: test/verify-no-unstaged-changes.sh

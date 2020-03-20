@@ -2,15 +2,24 @@
 .idea/
 *.iml
 
+# Configuration
+.babelrc
+.prettierrc
+
 # npm
 node_modules/
 npm-debug.log*
 
 # ESLint
 .eslintcache
+.eslintrc
+
+# CI
+.github/
 
 # Jest
 coverage/
 
 # Gatsby
 src/
+test/
