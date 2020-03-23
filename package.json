@@ -17,7 +17,8 @@
   "author": "Dimitri Mestdagh <me@g00glen00b.be>",
   "license": "MIT",
   "engines": {
-    "npm": ">=3.0.0"
+    "npm": ">=3.0.0",
+    "node": ">=11.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

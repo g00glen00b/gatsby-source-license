@@ -18,6 +18,8 @@ This plugin can be installed by using:
 npm install --save gatsby-source-license
 ```
 
+To be used, it requires at least **Node.js 11.0.0** and **npm 3.0.0**.
+
 ## How to use
 
 ```javascript
